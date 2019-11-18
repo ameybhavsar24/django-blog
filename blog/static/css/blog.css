@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Homemade+Apple|Indie+Flower|Raleway&display=swap');
+
+       * {
+           box-sizing: border-box;
+       }
+
+       body {
+           font-family: 'Raleway';
+       }
+
+       .pageTitle {
+           text-align: center;
+           font-family: 'Homemade Apple', cursive;
+           margin-top: 20px;
+       }
+
+       .post {
+           /* border : 2px solid #333; */
+           border-radius: 4px;
+           padding: 12px;
+           margin: 16px auto 16px auto;
+           background-color: lavenderblush;
+           max-width: 840px;
+
+       }
+
+       .post .publishedDate {
+           font-size: 80%;
+       }
+
+       .post .title {
+           font-family: 'Indie Flower', cursive;
+           letter-spacing: 1px;
+       }
+
+       a {
+           color : #4b167c;
+           text-decoration: none;
+       }
