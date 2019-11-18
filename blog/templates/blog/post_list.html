@@ -1,65 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'blog/base.html' %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Amey's blog</title>
-
-    <style>
-        @import url('https://fonts.googleapis.com/css?family=Homemade+Apple|Indie+Flower|Raleway&display=swap');
-
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Raleway', serif;
-        }
-
-        .pageTitle {
-            text-align: center;
-            font-family: 'Homemade Apple', cursive;
-        }
-
-        .post {
-            /* border : 2px solid #333; */
-            border-radius: 4px;
-            padding: 12px;
-            margin: 16px auto 16px auto;
-            background-color: lavenderblush;
-            max-width: 840px;
-
-        }
-
-        .post .publishedDate {
-            font-size: 80%;
-        }
-
-        .post .title {
-            font-family: 'Indie Flower', cursive;
-            letter-spacing: 1px;
-        }
-
-        a {
-            color : #4b167c;
-            text-decoration: none;
-        }
-    </style>
-</head>
-
-<body>
-
-    <h1 class='pageTitle'><a href='/'>Amey's blog</a></h1>
-    {% for post in posts %}
-    <div class='post'>
-        <p class='publishedDate'>published: {{ post.published_date }}</p>
-        <h1 class='title'><a href="#">{{post.title}}</a></h1>
-        <p class='text'>{{post.text|linebreaksbr}}</p>
+{% block content %}
+{% for post in posts %}
+    <div class="post">
+        <div class="date">
+            {{ post.published_date }}
+        </div>
+        <h2><a href="">{{ post.title }}</a></h2>
+        <p>{{ post.text|linebreaksbr }}</p>
     </div>
-    {% endfor %}
-
-</body>
-
-</html>
+{% endfor %}
+{% endblock %}
