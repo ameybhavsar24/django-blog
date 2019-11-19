@@ -26,13 +26,25 @@
 
        .post .publishedDate {
            font-size: 80%;
+           float: right;
        }
-
+       .textCenter {
+         text-align: center;
+       }
        .post .title {
            font-family: 'Indie Flower', cursive;
            letter-spacing: 1px;
        }
-
+       .text {
+         font-size: 90%;
+       }
+       .post .index {
+         font-family: 'Raleway', cursive;
+         letter-spacing: 1px;
+         text-align: right;
+         font-size: 120%;
+         /* float: right; */
+       }
        a {
            color : #4b167c;
            text-decoration: none;
