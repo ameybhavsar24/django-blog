@@ -7,11 +7,12 @@
        body {
            font-family: 'Raleway';
        }
-
+       .pageHeader {
+         margin-top: 20px;
+       }
        .pageTitle {
            text-align: center;
            font-family: 'Homemade Apple', cursive;
-           margin-top: 20px;
        }
 
        .post {
@@ -31,7 +32,7 @@
        .textCenter {
          text-align: center;
        }
-       .post .title {
+       .title {
            font-family: 'Indie Flower', cursive;
            letter-spacing: 1px;
        }
@@ -48,4 +49,15 @@
        a {
            color : #4b167c;
            text-decoration: none;
+       }
+
+       .top-menu {
+         height: 48px;
+         width: 48px;
+         position: absolute;
+         right: 10px;
+         top: 10px;
+         text-align: center;
+         font-size: 150%;
+         cursor: pointer;
        }

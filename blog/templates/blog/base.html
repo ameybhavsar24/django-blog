@@ -9,7 +9,9 @@
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
     <body>
-      <h1 class='pageTitle'><a href='/'>Amey's blog</a></h1>
+      <div class="pageHeader"><a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus">+</span></a>
+        <h1 class='pageTitle'><a href='/'>Amey's blog</a></h1>
+      </div>
     <div class="content container">
         <div class="row">
             <div class="col-md-8">
