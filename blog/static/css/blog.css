@@ -50,7 +50,9 @@
            color : #4b167c;
            text-decoration: none;
        }
-
+       .fa {
+         font-size: 150%;
+       }
        .top-menu {
          height: 48px;
          width: 48px;
